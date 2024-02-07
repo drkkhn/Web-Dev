@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa; 
+    font-family: 'Helvetica', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.phone-box {
+    width: 450px;
+}
+
+.phone-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form-box form {
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 60px;
+    border: 1px solid #ccc;
+}
+
+.form-box .or {
+    margin-right: 80px;
+}
+
+.logo {
+    width: 100px; 
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-button, .facebook-button {
+    width: 100%;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    padding: 13px;
+}
+
+.login-button {
+    background: #0095f6; 
+}
+
+.facebook-button {
+    background: white;
+    color: blue;
+}
+
+.forgot-password-link, .signup-link {
+    color: #00376b;
+    text-decoration: none;
+}
+
+.signup-box {
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.signup-box p {
+    margin-bottom: 10px;
+}
+
+.get-app-img {
+    width: 250px;
+    margin-left: 80px; 
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    height: 30px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 10px;
+    font-size: small;
+    color: gray;
+}
+
+.form-box p {
+    margin-left: 75px;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="box">
+        <div class="phone-box">
+            <img src="back.png" alt="inst-phone" class="phone-img">
+        </div>
+        <div class="form-box">
+            <form action="#">
+                <img src="logo.png" class="logo" alt="inst-logo">
+                <input type="text" placeholder="Phone, number, username, or email address" class="input-field">
+                <input type="password" placeholder="Password" class="input-field">
+                <button type="submit" class="login-button">Log In</button>
+                <hr>
+                <p class="or">OR</p>
+                <hr>
+                <button class="facebook-button">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    Log in with Facebook
+                </button>
+                <a href="#" class="forgot-password-link">Forgotten your password?</a>
+            </form>
+            <div class="signup-box">
+                <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+                <p>Get the app.</p>
+                <img src="getfrom.png" alt="get-from" class="get-app-img">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="footer-list">
+            <li>Meta</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+        </ul>
+    </footer>
+</body>
+</html>
