@@ -1,0 +1,22 @@
+img {
+    width: 100px;
+}
+
+button {
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+
+.whatsapp {
+    background-color: green;
+}
+
+.delete {
+    background-color: rgb(182, 14, 14);
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
