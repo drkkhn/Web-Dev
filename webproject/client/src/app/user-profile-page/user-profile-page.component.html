@@ -1,0 +1,45 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="body">
+    <div class="container">
+        <div class="user-info">
+            <img src="https://i.pinimg.com/564x/8c/25/61/8c2561f3051a433503426c56c9cae328.jpg" alt="">
+            <div>
+                <h1 class="details">{{username}}</h1>
+                <p>other details Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum soluta, natus praesentium consequuntur aliquid tenetur doloremque facere pariatur sequi nihil hic minima veritatis placeat qui expedita iusto officia reprehenderit rerum.</p>
+            </div>
+        </div>
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+            <div class="Product-Creator">
+                <div class="buttons">
+                    <button type="submit" class="create-btn" (click)="onSelectProduct('tops')"> Create new Tops</button>
+                    <button type="submit" class="create-btn" (click)="onSelectProduct('pants')"> Create new Pants</button>
+                    <button type="submit" class="create-btn" (click)="onSelectProduct('shoes')"> Create new Shoes</button>
+                    <button type="submit" class="create-btn" (click)="onSelectProduct('hats')"> Create new Hats</button>
+                </div>
+        
+                <div *ngIf="selectedProduct" class="form">
+                    <input type="text" formControlName="name" placeholder="Name">
+                    <input type="text" formControlName="brand" placeholder="Brand">
+                    <input type="number" formControlName="price" placeholder="Price">
+                    <input type="text" formControlName="image_url" placeholder="Image URL">
+                    <p>Gender</p>
+                    <select formControlName="gender" placeholder="Gender">
+                        <option *ngFor="let gender of genders" [value]="gender.id">{{ gender.name }}</option>
+                    </select>
+                    <p>Category</p>
+                    <select formControlName="category" >
+                        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+                    </select>
+                    <p>Sizes</p>
+                    <select formControlName="sizes" multiple>
+                        <option *ngFor="let size of availableSizes" [value]="size.id">{{ size.size }}</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        
+        
+        
+    </div>
+</div>

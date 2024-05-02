@@ -1,0 +1,9 @@
+<div class="container" [style.columns]="columns " [style.width]="div_width + 'px'">
+    <button *ngFor="let product of productsList" class="product-card" (click)="redirectToProduct( product.name,product.id)">
+        <img [src]="product.image_url" alt="" >
+        <div class="product-hover">
+            <p> {{product.name}}</p>
+            <p>{{product.price}}$</p>
+        </div>
+    </button>
+</div>

@@ -1,0 +1,73 @@
+Table Size {
+  id integer [primary key]
+  size varchar(20) [not null]
+}
+
+Table Category {
+  id integer [primary key]
+  name varchar(255) [not null]
+}
+
+Table Hat {
+  id integer [primary key]
+  name varchar(255) [not null]
+  brand varchar(255) [not null]
+  color varchar(50) [not null]
+  price decimal(8, 2) [not null]
+  image text [not null]
+  gender varchar(20) [not null]
+  category_id integer [ref: > Category.id]
+}
+
+Table Top {
+  id integer [primary key]
+  name varchar(255) [not null]
+  brand varchar(255) [not null]
+  color varchar(50) [not null]
+  price decimal(8, 2) [not null]
+  image text [not null]
+  gender varchar(20) [not null]
+  category_id integer [ref: > Category.id]
+}
+
+Table Shoe {
+  id integer [primary key]
+  name varchar(255) [not null]
+  brand varchar(255) [not null]
+  color varchar(50) [not null]
+  price decimal(8, 2) [not null]
+  image text [not null]
+  gender varchar(20) [not null]
+  category_id integer [ref: > Category.id]
+}
+
+Table Pant {
+  id integer [primary key]
+  name varchar(255) [not null]
+  brand varchar(255) [not null]
+  color varchar(50) [not null]
+  price decimal(8, 2) [not null]
+  image text [not null]
+  gender varchar(20) [not null]
+  category_id integer [ref: > Category.id]
+}
+
+Table Size_Hat {
+  size_id integer [ref: > Size.id]
+  hat_id integer [ref: > Hat.id]
+}
+
+Table Size_Top {
+  size_id integer [ref: > Size.id]
+  top_id integer [ref: > Top.id]
+}
+
+Table Size_Shoe {
+  size_id integer [ref: > Size.id]
+  shoe_id integer [ref: > Shoe.id]
+}
+
+Table Size_Pant {
+  size_id integer [ref: > Size.id]
+  pant_id integer [ref: > Pant.id]
+}

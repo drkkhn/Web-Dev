@@ -1,0 +1,28 @@
+<app-nav-bar></app-nav-bar>
+<div class="body">
+    <div class="container">
+        <img src={{product.image_url}} alt="">
+        <div class="details">
+            <h1> {{product.name}}</h1>
+            <p> cool t-shirt Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi a illum eos, suscipit debitis odio expedita libero? Porro eum, doloribus inventore, labore et mollitia quia reiciendis possimus quos, ad obcaecati?</p>
+            <div class="lower-details">
+                <button class="purchase">Purchase</button>
+                <button class="cart"> Add to Cart</button>
+            </div>
+            <div class="comments-container">
+                <input type="text" class="search-bar" placeholder="">
+                <div class="comment">
+                    <fa-icon [icon]="faCircleUser" size="2xl" style ="color:gray" class="icon"></fa-icon>
+                    <div class="comment-text-container">
+                        <p class="username">username</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet illo magnam nisi mollitia? Illo cum repellat ad mollitia quam vel? Ex illo aspernatur, officia cumque veniam sit magnam unde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <app-shop-feed></app-shop-feed>
+</div>

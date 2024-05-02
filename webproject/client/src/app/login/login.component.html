@@ -1,0 +1,38 @@
+
+<div class="parent"> 
+    <div class="container" id="container">
+        <div class="form-container sign-in" >
+            <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+                <h1>Sign In</h1>
+                <span>or use your email password</span>
+                <input 
+                    name="username"
+                    [(ngModel)]="model.username"
+                    class="form-control me-2" 
+                    type="text" 
+                    placeholder="Username">
+                <input 
+                    name="password"
+                    [(ngModel)]="model.password"
+                    class="form-control me-2" 
+                    type="password" 
+                    placeholder="Password">
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button type="button" class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Wear, Web!</h1>
+                    <p>All clothes you can find!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

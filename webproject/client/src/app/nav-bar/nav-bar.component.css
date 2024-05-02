@@ -1,0 +1,45 @@
+.container{
+    padding: 0px 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.search-bar{
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(240, 240, 240);
+    transition: 0.15s;
+    font-size: 15px;
+    padding-left: 10px;
+    color: rgb(57, 57, 57);
+}
+.search-bar:hover{
+    background-color: rgb(215, 215, 215);
+    transition: 0.15s;
+}
+fa-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    transition: 0.15s;
+}
+fa-icon:hover{
+    background-color: rgb(215, 215, 215);
+}
+.main-button{
+    text-decoration: none;
+    background-color: white;
+    border: none;
+}
+
+button{
+    background-color: white;
+    border: none;
+}

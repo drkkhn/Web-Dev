@@ -1,0 +1,18 @@
+<div class="container">
+    <button (click)="Logout()">
+        <fa-icon [icon]="faCircleXmark" size="2xl" style="color: rgb(209, 132, 132);"></fa-icon>
+    </button>
+    <button class="main-button" (click)="RedirectToMain()"> 
+           <fa-icon [icon]="fashop" size="2xl" style="color: rgb(49, 185, 163);"></fa-icon>
+    </button>
+    <input type="text" class="search-bar" placeholder="search...">
+    <fa-icon [icon]="faChevronDown" size="lg" style ="color:gray" class="icon"></fa-icon>
+    <fa-icon [icon]="faBell" size="xl" style ="color:gray" class="icon"></fa-icon>
+    <fa-icon [icon]="faCartShooping" size="xl" style ="color:gray" class="icon"></fa-icon>
+    <button class="login" *ngIf="isAuthenticated" (click)="RedirectToProfile()">
+        <fa-icon [icon]="faCircleUser" size="2xl" style="color: gray" class="icon"></fa-icon>
+    </button>
+    <button class="login" *ngIf="!isAuthenticated" (click)="RedirectToLogin()">
+        <fa-icon [icon]="faCircleUser" size="2xl" style="color: gray" class="icon"></fa-icon>
+    </button>
+</div>
