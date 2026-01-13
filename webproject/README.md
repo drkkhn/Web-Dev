@@ -10,9 +10,7 @@ WearWeb is an online platform where users can browse, search, and purchase a var
 
 WearWeb was developed by the following team members:
 
-Kim Almas
-Oralkhan Askar
-James Chilumba Ngwira
+Ussen Darkhan
 
 # Features
 
